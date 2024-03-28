@@ -90,7 +90,7 @@ def get_Class(day):
 def send_Week_Classes(to_user, access_token, week):
      url = "https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={}".format(access_token)
      theuser = to_user[0]
-    data = {
+     data = {
          "touser": theuser,
          "template_id": config.template_id2,
          "url": "http://weixin.qq.com/download",
